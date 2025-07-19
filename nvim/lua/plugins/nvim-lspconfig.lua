@@ -24,10 +24,16 @@ return {
         -- lspconfig.hls.setup({})
         -- lspconfig.ocamllsp.setup({})
         -- lspconfig.ruby_lsp.setup({})
-        -- src: https://docs.astral.sh/ruff/editors/setup/#neovim
+            -- src: https://docs.astral.sh/ruff/editors/setup/#neovim
         lspconfig.ruff.setup({})
         -- lspconfig.ts_ls.setup({})
-        -- lspconfig.elixirls.setup({})
+        -- lspconfig.fsautocomplete.setup({})
+		-- Run this first: julia --project=~/.julia/environments/nvim-lspconfig -e 'using Pkg; Pkg.add("LanguageServer")'
+	-- lspconfig.julials.setup({})
+	-- lspconfig.elixirls.setup({
+		-- NOTE: The cmd must be set and the $HOME and ~ are not expanded.
+		-- cmd = { "/Users/xiushi/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
+	-- })
         lspconfig.tinymist.setup({
             settings = {
                 formatterMode = "typstyle",
