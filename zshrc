@@ -66,6 +66,7 @@ export VISUAL="$EDITOR"
 # Initialize Starship prompt
 eval "$(starship init zsh)"
 
+
 # Shell-GPT integration ZSH v0.2
 _sgpt_zsh() {
 if [[ -n "$BUFFER" ]]; then
@@ -77,5 +78,5 @@ if [[ -n "$BUFFER" ]]; then
 fi
 }
 zle -N _sgpt_zsh
-bindkey ^l _sgpt_zsh
+bindkey "^[g" _sgpt_zsh
 # Shell-GPT integration ZSH v0.2
