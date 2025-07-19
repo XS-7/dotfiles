@@ -4,9 +4,10 @@ local opts = {
 	silent = true, -- do not show message
 }
 
------------------
+
+------------------
 -- Normal mode --
------------------
+------------------
 
 -- Hint: see `:h vim.map.set()`
 -- Better window navigation
@@ -44,9 +45,10 @@ vim.keymap.set("n", "<leader>aa", "<cmd>CodeCompanionChat Toggle<CR>", opts)
 --     'change quot*es'            cs'"            "change quotes"
 --     <b>or tag* types</b>        csth1<CR>       <h1>or tag types</h1>
 
------------------
+
+------------------
 -- Visual mode --
------------------
+------------------
 
 -- Hint: start visual mode with the same area as the previous area and the same mode
 vim.keymap.set("v", "<", "<gv", opts)
@@ -58,3 +60,27 @@ vim.keymap.set("v", ">", ">gv", opts)
 -- 3. Press `gsi` to increment selection by AST node. (si = selection incremental)
 -- 4. Press `gsc` to increment selection by scope. (sc = scope)
 -- 5. Press `gsd` to decrement selection. (sd = selection decrement)
+
+
+------------------
+-- Insert mode --
+------------------
+
+-- Emacs-style keybindings for Insert mode
+vim.keymap.set("i", "<C-a>", "<Home>", opts)     -- beginning of line
+vim.keymap.set("i", "<C-e>", "<End>", opts)      -- end of line
+vim.keymap.set("i", "<C-f>", "<Right>", opts)    -- forward char
+vim.keymap.set("i", "<C-b>", "<Left>", opts)     -- backward char
+vim.keymap.set("i", "<C-n>", "<Down>", opts)     -- next line
+vim.keymap.set("i", "<C-p>", "<Up>", opts)       -- previous line
+vim.keymap.set("i", "<M-f>", "<C-o>w", opts)     -- forward word
+vim.keymap.set("i", "<M-b>", "<C-o>b", opts)     -- backward word
+vim.keymap.set("i", "<C-d>", "<Del>", opts)      -- delete char
+vim.keymap.set("i", "<M-d>", "<C-o>dw", opts)    -- delete word
+vim.keymap.set("i", "<C-k>", "<C-o>D", { noremap = true, silent = true })     -- kill line
+vim.keymap.set("i", "<C-u>", "<C-o>d0", opts)    -- kill line backward
+vim.keymap.set("i", "<C-w>", "<C-o>db", opts)    -- kill word backward
+vim.keymap.set("i", "<C-y>", "<C-r>0", opts)     -- yank from register 0
+vim.keymap.set("i", "<C-t>", "<C-o>xp", opts)    -- transpose chars
+vim.keymap.set("i", "<C-g>", "<Esc>", opts)      -- escape/cancel
+
