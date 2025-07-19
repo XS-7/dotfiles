@@ -1,3 +1,4 @@
 nvim/plugin/packer_compiled.lua
 .luarc.json
 sync.sh
+quick-push.sh

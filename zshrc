@@ -53,6 +53,8 @@ alias pydoc="uv run python -m pydoc"
 
 alias activate='source .venv/bin/activate'
 
+alias syncdot="~/dotfiles/sync.sh --all && ~/dotfiles/quick-push.sh"
+
 
 # Set Neovim as the default editor for command-line tools
 export EDITOR="/opt/local/bin/nvim"
