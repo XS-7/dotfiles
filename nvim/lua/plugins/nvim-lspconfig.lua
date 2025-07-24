@@ -32,7 +32,7 @@ return {
 	-- lspconfig.julials.setup({})
 	-- lspconfig.elixirls.setup({
 		-- NOTE: The cmd must be set and the $HOME and ~ are not expanded.
-		-- cmd = { "/Users/xiushi/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
+		-- cmd = { "/Users/name/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
 	-- })
         lspconfig.tinymist.setup({
             settings = {
