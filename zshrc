@@ -22,10 +22,10 @@ fi
 
 
 # Proxy settings for http and https traffic via SOCKS5H for all applications
-export http_proxy=socks5h://127.0.0.1:7890
-export https_proxy=socks5h://127.0.0.1:7890
-export HTTP_PROXY=socks5h://127.0.0.1:7890 # Uppercase for some apps
-export HTTPS_PROXY=socks5h://127.0.0.1:7890 # Uppercase for some apps
+export http_proxy=socks5h://127.0.0.1:7897
+export https_proxy=socks5h://127.0.0.1:7897
+export HTTP_PROXY=socks5h://127.0.0.1:7897 # Uppercase for some apps
+export HTTPS_PROXY=socks5h://127.0.0.1:7897 # Uppercase for some apps
 
 
 source ~/fzf.zsh
